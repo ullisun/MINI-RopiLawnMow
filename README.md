@@ -2,7 +2,7 @@
 
 ![P1230626](https://github.com/ullisun/MINI-RopiLawnMow/assets/86979044/c1fe0fa5-532a-42ac-b058-2ecc7cfcc6ca)
 
-# This is the indoor development platform of my [RoπLawnMow](https://githib.com/ullisun/RopiLawnMow) Project
+# This is the indoor development platform of my [RoπLawnMow](https://github.com/ullisun/RopiLawnMow) Project
 
 This script supplies the “drive.py” file with drive commands
 are stored in separate driving files. e.g. B. cm_vor or ccw90, cw90 .
