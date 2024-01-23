@@ -1,0 +1,19 @@
+# Trip-Datei rectangle ccw
+#startpunkt
+#fahre 100cm straigt mit lrpm und rrpm 40
+40,40,100,s
+#1. Drehung ccw um 90 Grad
+17,17,-90,r
+#fahre 100cm straigt um -90Grad ggü letzter straight Fahrt mit lrpm und rrpm 40 
+40,40,100,s-90
+#2. Drehung ccw um 90 Grad
+17,17,-90,r
+#fahre 100cm straigt um -90Grad ggü letzter straight Fahrt mit lrpm und rrpm 40 
+40,40,100,s-90
+#3. Drehung ccw um 90 Grad
+17,17,-90,r
+#Fahrt zum Startpunkt 100cm straigt um -90Grad ggü letzter straight Fahrt mit lrpm und rrpm 40 
+40,40,100,s-90
+
+
+ 

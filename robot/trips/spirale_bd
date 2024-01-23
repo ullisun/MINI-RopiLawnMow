@@ -1,0 +1,115 @@
+# Trip-file spirale_bd
+# Startpoint
+# ################################################################################################
+# Start 1st turn
+# ################################################################################################
+# drive 110cm straight with lrpm and rrpm 40
+40,40,110,s
+# 1. turn ccw 90 Grad
+-17,17,11,12
+# drive 190cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,190,s-90
+# 2. turn ccw  90 Grad
+-17,17,11,12
+# drive 110cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,110,s-90
+# 3. turn ccw  90 Grad
+-17,17,11,12
+# drive 160cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,160,s-90
+# 4. turn ccw 90 Grad
+-17,17,11,12
+# ################################################################################################
+# Start 2nd. turn
+# ################################################################################################
+40,40,85,s-90
+# 5. turn ccw 90 Grad
+-17,17,11,12
+# drive 140cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,140,s-90
+# 6. turn ccw 90 Grad
+-17,17,11,12
+# drive 65cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,65,s-90
+# 7. turn ccw 90 Grad
+-17,17,11,12
+# drive 115cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,115,s-90
+# 8. turn ccw 90 Grad
+-17,17,11,12
+# ################################################################################################
+# Start 2nd. turn
+# ################################################################################################
+# drive 42cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,42,s-90
+# 9. turn ccw 90 Grad
+-17,17,11,12
+# drive 93cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,93,s-90
+# 10. turn ccw 90 Grad
+-17,17,11,12
+# drive 93cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40 
+40,40,25,s-90
+# 10. turn ccw 90 Grad
+-17,17,11,12
+ # drive 35cm straight with -90Grad to previous  straight drive with lrpm and rrpm 40
+40,40,35,s-90
+# ################################################################################################
+# Turn 180 Grad and now the reverse direction starts
+# ################################################################################################
+-17,17,11,12
+-17,17,11,12
+# drive 40cm straight with 180Grad to previous  straight drive with lrpm and rrpm 40
+40,40,35,s180
+# 1. turn cw 90 Grad
+17,-17,12,11
+40,40,25,s90
+# 2. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,93,s90
+# 3. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,48,s90
+# 4. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,115,s90
+# 5. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,65,s90
+# 6. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,140,s90
+# 7. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,85,s90
+# 8. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,160,s90
+# 9. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,110,s90
+# 10. turn cw 90 Grad
+17,-17,12,11
+# Strecke
+40,40,190,s90
+# 11. turn cw 90 Grad
+17,-17,12,11
+# ################################################################################################
+# Home position is in 110 cm distance take  care
+# ################################################################################################
+40,40,110,s90
+# ################################################################################################
+# Turn 180 Grad and trip is finished
+# ################################################################################################
+-17,17,11,12
+-17,17,11,12
+# EOF
+
