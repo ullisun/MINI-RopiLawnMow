@@ -22,10 +22,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+#  it is based on the code of the PiMowBotIT-SW and modified for 
+#  own demands
+#
+
+
 import os
 import signal
 import sys
-sys.path.append('/home/pi/pimowbot/bin')
+sys.path.append('/home/pi/dev/robot')
 import VL53L0X
 from gpiozero import LED
 from time import sleep, strftime
@@ -83,23 +88,7 @@ def init():
             timing = tof_d.get_timing()
 
 init()
-x = False
 
-def check(d, f, p):
-    global x
-    if d < 0:
-        x = True
-    elif d==0:
-        pass
-    else:
-        if p == True:
-            File = open (f,"w")
-            File.write(str(d))
-            File.close()
-        else:
-            File = open (f,"w")
-            File.write(str(d)+' '+p)
-            File.close()
 def store(para):
     print(para)
     with open("/run/shm/distance","w") as f:
@@ -109,28 +98,11 @@ try:
    while True:
         DL = int (tof_l.get_distance() / 10)
         DR = int (tof_r.get_distance() / 10)
-        #if DL <=15 or DR <= 15:
-        #    with open("/run/shm/stop","w") as f:
-        #        f.write("")
         store('{"left":'+str(DL)+',"right":'+str(DR)+'}')
-        #print('Distancer : %d cm' % Distance)
-        if LiDAR:
-            Distance = int (tof_d.get_distance() / 10)
-            check(Distance, "/run/shm/.PiMowBot_lidar.distance", True)
-            #print('DistanceD : %d cm' % Distance) 
-            if os.path.isfile('/run/shm/.PiMowBot_LiDAR.pos'):
-                File = open ("/run/shm/.PiMowBot_LiDAR.pos","r")
-                val = File.read()
-                File.close()
-                check(Distance, "/run/shm/.PiMowBot_LiDAR.lidar", val)
-        if x:
-            shutd()
-            init() 
-            x = False
         sleep(delay)      # wait 300ms
 
 except KeyboardInterrupt:
-   print(strftime('%d-%b-%Y/%H:%M:%S') + " [ PiMowBot-It! Management: TOF meassuring interupted... ]")
+   print(strftime('%d-%b-%Y/%H:%M:%S') + " [TOF meassuring interupted... ]")
 
 finally:
    tof_l.stop_ranging()
@@ -138,4 +110,4 @@ finally:
    if LiDAR:
       tof_d.stop_ranging()
    shutd()
-   print(strftime('%d-%b-%Y/%H:%M:%S') + " [ PiMowBot-It! Management: TOF meassuring finished !!! ]")
+   print(strftime('%d-%b-%Y/%H:%M:%S') + " [TOF meassuring finished !!! ]")
