@@ -22,8 +22,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-#  it is based on the code of the PiMowBotIT-SW and modified for 
-#  own demands
+#  
+#  it is based on the code of the PiMowBotIT-SW  http://pimowbot.tgd-consulting.de/ 
+#  and modified for own demands
 #
 
 
