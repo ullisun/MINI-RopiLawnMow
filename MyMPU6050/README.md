@@ -8,6 +8,6 @@ This data will be read of MINIRopiLawnMows python file [readSWSerial.py](https:/
 **todo:**
 Soldering a taster and a LED to the pcb and update the code
 
-**Goal:** Is the DI MINI Board in the area of the known WLAN, it is possible with the taster to log into it and update
-the code if needed via Webserial interface. No usb cable is needed.
+**Goal:** Is the DI MINI Board in the area of the known WLAN, press the taster to log into the WLAN and update
+the code if needed via Webserial interface. No USB cable is needed.
 
