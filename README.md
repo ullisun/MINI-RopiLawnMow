@@ -4,7 +4,7 @@
 
 This is the indoor development platform of my [RoπLawnMow](https://github.com/ullisun/RopiLawnMow) Project
 
-the difference between this project and the RoπLawnMow Project is the drive Script.
+The difference between this project and the **RoπLawnMow** Project is the drive.py script.
 In the MINI-RoπLawnMow are brushed Motors installed and for that a different Motordriver is needed.
 I will try to make all relevant changes in the driver.py so that only this file as to be exchange later
 
