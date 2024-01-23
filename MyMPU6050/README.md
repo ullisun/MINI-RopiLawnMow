@@ -3,7 +3,7 @@
 
 This code provides on Serial Interface of the Gyro Data "Roll, Pitch and YAW".
 
-This data will be read of MINIRopiLawnMows python file [https://github.com/ullisun/MINI-RopiLawnMow/blob/main/robot/readSWSerial.py].[readSWSerial.py] and store it frequently (150ms) into /run/shm/heading of the pi
+This data will be read of MINIRopiLawnMows python file [readSWSerial.py](https://github.com/ullisun/MINI-RopiLawnMow/blob/main/robot/readSWSerial.py) and store it frequently (150ms) into /run/shm/heading of the pi
 
 **todo:**
 Soldering a taster and a LED to the pcb and update the code
