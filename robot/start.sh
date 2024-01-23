@@ -17,6 +17,12 @@ else
     echo "Gyro Script wird gestartet"
     python /home/pi/dev/robot/readSWSerial.py  > /dev/null 2>&1 &
 fi
+if pgrep -f "drive.py" &> /dev/null; then
+    echo "drive Script Läuft schon"
+else
+    echo "drive Script wird gestartet"
+    python /home/pi/dev/robot/drive.py  > /dev/null 2>&1 &
+fi
 if pgrep -f ".PiMowBotIt_pyBLEremote." &> /dev/null; then
     echo "BLE FB Läuft schon"
 else
